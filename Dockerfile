@@ -9,7 +9,7 @@ RUN apt-get -q update \
 		ca-certificates \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN pip install awscli
+RUN pip install
 
 RUN gpg --recv-keys --keyserver pgp.mit.edu 0x9165938D90FDDD2E
 
